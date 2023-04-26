@@ -13,9 +13,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <ClerkProvider {...pageProps}>
-      <SessionProvider session={session}>
-        <Component {...pageProps} />
-      </SessionProvider>
+      {/* <SessionProvider session={session}> */}
+      <Component {...pageProps} />
+      {/* </SessionProvider> */}
     </ClerkProvider>
   );
 };

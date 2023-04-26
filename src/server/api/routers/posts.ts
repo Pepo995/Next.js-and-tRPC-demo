@@ -17,6 +17,7 @@ const filterUserForClient = (user: User) => {
 
 export const postsRouter = createTRPCRouter({
   getAll: publicProcedure.query(async ({ ctx }) => {
+    console.log("holaaaa");
     const posts = await ctx.prisma.post.findMany({
       take: 100,
     });
@@ -26,8 +27,6 @@ export const postsRouter = createTRPCRouter({
         limit: 100,
       })
     ).map(filterUserForClient);
-
-    console.log(users);
 
     return posts.map((post) => ({
       post,
