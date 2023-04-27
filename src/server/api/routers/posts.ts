@@ -4,7 +4,7 @@ import {
   createTRPCRouter,
   publicProcedure,
   protectedProcedure,
-} from "demo/server/api/trpc";
+} from "server/api/trpc";
 import clerkClient, { type User } from "@clerk/clerk-sdk-node";
 
 const filterUserForClient = (user: User) => {

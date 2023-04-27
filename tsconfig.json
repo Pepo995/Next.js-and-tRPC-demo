@@ -16,10 +16,7 @@
     "jsx": "preserve",
     "incremental": true,
     "noUncheckedIndexedAccess": true,
-    "baseUrl": ".",
-    "paths": {
-      "demo/*": ["./src/*"]
-    }
+    "baseUrl": "./src"
   },
   "include": [
     ".eslintrc.cjs",
@@ -27,7 +24,8 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs"
+    "**/*.mjs",
+    "tailwind.config.js"
   ],
   "exclude": ["node_modules"]
 }
